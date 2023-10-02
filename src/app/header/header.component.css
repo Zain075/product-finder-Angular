@@ -1,0 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Bruno+Ace&family=Dancing+Script:wght@400;600&family=Freehand&family=Fugaz+One&family=Gloria+Hallelujah&family=Kaushan+Script&family=Lobster+Two:ital,wght@0,400;1,700&family=Marck+Script&family=Merriweather&family=Monoton&family=Montserrat:wght@500&family=Mukta&family=PT+Sans&family=Pacifico&family=Rajdhani&family=Russo+One&family=Satisfy&family=Tangerine:wght@700&family=Ysabeau:wght@500&display=swap');
+.nav-title{
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+   
+}
+
+.navbar{
+    background-color:   #10063d;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.461);
+    z-index: 1;
+    height: 60px;
+}

@@ -1,0 +1,33 @@
+<div class="container " style="min-height: 100vh;">
+ 
+  <div class="text-center">
+    <input (keyup)="filter($event)" type="text" aria-label="search" placeholder="Search Product">
+  </div>
+
+    <div class="row ">
+
+               
+      
+                <div class="card m-4 d-flex"  *ngFor=" let products of productDetails|search:searchKey:'title'">
+               
+                    <img [src]="products.images[0]" class="card-img-top mt-2" alt="...">
+                    <div class="card-body flex-column ">
+                      <h5 class="card-title">{{products.title}}</h5>
+                      <p class="card-text">${{products.price}}</p>
+                    
+                        <button class="btn btn-dark">Buy Now</button>
+
+                      
+                    </div>
+                    
+                  </div>
+                  <div *ngIf="( productDetails|search:searchKey:'title') as result" class="text-center mt-4">
+
+                    <h2 *ngIf="result.length == 0">No products found</h2>  
+                  
+                  </div>
+                
+           
+       
+    </div>
+</div>
